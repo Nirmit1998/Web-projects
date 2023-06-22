@@ -1,0 +1,54 @@
+body{
+	background-image:url('https://static.vecteezy.com/system/resources/previews/016/264/238/original/portrait-of-an-excited-beautiful-girl-wearing-dress-and-sunglasses-holding-shopping-bags-cheerful-young-woman-with-handbag-on-yellow-background-shopaholic-shopping-fashion-free-photo.jpg');
+	background-size:100% 70%;
+	background-repeat:no-repeat;
+	background-color:#dfdfdf 
+}
+*{
+	font-family:calibri;
+}
+ul{
+	list-style:none;
+	float:right;
+}
+ul li{
+	display:inline-block;
+	padding:6px 12px;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	font-size:17px;
+	font-weight:bold;
+}
+ul li a:hover{
+	color:orangered;
+}
+.heading{
+	margin-top:75px;
+	margin-left:60px;
+	
+}
+#button{
+	border:none;
+	text-decoration:none;
+	padding:8px 20px;
+	color:white;
+	background-color:#1a2a3c;
+	border-radius:5px;
+}
+.footer{
+	display:flex;
+	justify-content:space-evenly;
+	margin-top:100px;
+	text-align:center;
+}
+#ft1,#ft2,#ft3{
+	border:none;
+	padding:20px 80px;
+	background-color:white;
+	box-shadow:10px 10px 10px #bcbcbc;
+}
+.footer h3{
+	color:orangered;
+}
