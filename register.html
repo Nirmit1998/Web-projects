@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Create my account</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+	<h2 style="opacity:0.8"><span style="color:red">E-</span>Commerce</h2>
+	
+	<div class="form">
+		<form action="home.html">
+			<h2 style="font-weight:normal;margin-bottom:25px">Sign up here & <br>
+			become our member!</h2>
+			<input type="text" placeholder="Enter username" id="uname"><br><br>
+			<input type="email" placeholder="Enter E-mail address" id="mail"><br><br>
+			<input type="password" placeholder="Enter password" id="pword"><br><br>
+			<input type="password" placeholder="Confirm your password" id="cpword"><br><br>
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('form').submit(function(){
+				var uname=$('#uname').val();
+				var mail=$('#mail').val();
+				var pword=$('#pword').val();
+				var cpword=$('#cpword').val();
+				
+				if(uname=="")
+				{	
+					alert("Please enter username");
+					$('#uname').css('border','2px solid red');
+					return false;
+				}
+				
+				else if(mail=="")
+				{
+					alert("Please enter Email-ID");
+					$('#mail').css('border','2px solid red');
+					return false;
+				}
+				
+				else if(pword=="")
+				{
+					alert("Please enter password (at least 6 characters)");
+					$('#pword').css('border','2px solid red');
+					return false;
+				}
+				
+				else if(cpword!=pword)
+				{
+					alert("Passwords do not match!");
+					$('#cpword').css('border','2px solid red');
+					return false;	
+				}
+			})
+		})
+	</script>
+</body>
+</html>
